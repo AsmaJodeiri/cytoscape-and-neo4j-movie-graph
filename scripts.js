@@ -21,46 +21,7 @@ function initiateCy() {
 
 
     });
-    // window.cy.contextMenus({
-    //     menuItems: [
-    //             {
-    //                     id: 'showMovies',
-    //                     content: 'Show Movies',
-    //                     tooltipText: 'showMovies',
-    //                     selector: 'node[type="actor"]',
-    //                     onClickFunction: function (event) {
-    //                         var target = event.target || event.cyTarget;
-    //                         console.log(target.id());
-    //                         drawNeighbours(target.id,true,1);
-    //                     },
-    //                     hasTrailingDivider: true
-    //                 },
-    //             {
-    //                     id: 'showActors',
-    //                     content: 'Show Actors',
-    //                     tooltipText: 'showActors',
-    //                     selector: 'node[type="movie"]',
-    //                     onClickFunction: function (event) {
-    //                         var target = event.target || event.cyTarget;
-    //                         drawNeighbours(target.id,false,1);
-    //                     },
-    //                     hasTrailingDivider: true
-    //                 },
-    //                 {
-    //                     id: 'hide',
-    //                     content: 'hide',
-    //                     tooltipText: 'hide',
-    //                     selector: '*',
-    //                     onClickFunction: function (event) {
-    //                         var target = event.target || event.cyTarget;
-    //                         target.hide();
-    //                     },
-    //                     disabled: false
-    //                 }
-    //             ],
-    //             menuItemClasses: ['custom-menu-item'],
-    //             contextMenuClasses: ['custom-context-menu']
-    //         });
+   
 
     var options = {
         // Customize event to bring up the context menu
