@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie and Actor Graph</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.19.0/cytoscape.min.js"></script>
+
+    <script src="https://unpkg.com/neo4j-driver"></script>
+
+
+    <script src="scripts.js"></script>
+    <script src="cytoscape-context-menus.js"></script>
+	<script src="cytoscape-cose-bilkent.js"></script>
+    <script></script>
+</head>
+
+<body>
+<div class="row">
+    <div id="side-pane">
+        <input type="text" id="name-input" class="form-control" name="name" placeholder="Actor/Movie name" required>
+        <input type="number" id="turn-input" class="form-control" name="turn" required placeholder="Turns">
+        <button type="button" class="btn btn-primary" id="search-btn" onclick="start()">Search</button>
+
+        <div id="radio-group">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="radiogroup" id="actor-radio" checked="checked"
+                       value="option1">
+                <label class="form-check-label" for="actor-radio">Actor</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="radiogroup" id="movie-radio"
+                       value="option2">
+                <label class="form-check-label" for="movie-radio">Movie</label>
+            </div>
+        </div>
+    </div>
+    <div id="graph-area">
+        <div id="cy"></div>
+    </div>
+</div>
+3
+</body>
+</html>
