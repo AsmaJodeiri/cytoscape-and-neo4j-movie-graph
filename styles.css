@@ -1,0 +1,42 @@
+#cy {
+    float: right;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#graph-area {
+    margin-right: 10%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 30%;
+}
+
+#side-pane {
+    width: 30%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#search-btn {
+    margin: 10px;
+
+}
+
+#name-input {
+    margin: 10px;
+}
+
+#turn-input {
+    margin: 10px;
+    width: 100px;
+}
+
+#radio-group {
+    margin: 10px;
+}
+
